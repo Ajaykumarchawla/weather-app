@@ -6,6 +6,7 @@ const forecast = require("./utils/forecast");
 
 
 const app = express()
+const port = process.env.PORT || 3000
 // setup handle bar paths
 publicPath = path.join(__dirname,'../public')
 viewPath = path.join(__dirname,"../tamplets/views")
@@ -94,6 +95,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('node server started at localhost:3000')
 });
