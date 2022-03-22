@@ -21,7 +21,7 @@ hbs.registerPartials(partialsPath);
 app.get('',(req,res)=>{
     res.render('index',{
         title: "Weather App",
-        name: "ajay"
+        name: "Ajay kumar"
     })
     
 })
@@ -29,15 +29,15 @@ app.get('',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title: "Help",
-        helpMessage:"please do not ping this page",
-        name: "ajay"
+        helpMessage:"Welcome to Weather app. Search your location on weather page and get the output.",
+        name: "Ajay kumar"
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:"About",
-        name:"Ajay"
+        name:"Ajay kumar"
     })
 })
 app.get('/weather',(req,res)=>{
